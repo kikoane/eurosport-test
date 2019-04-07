@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import fetchPlayers from './services/fetchPlayers';
+import Players from './containers/Players';
+import {
+  PlayerWrapper
+} from './styles';
 
 class App extends Component {
+  state = {
+    players: []
+  };
+
+  async componentDidMount() {
+    const { players } = await fetchPlayers();
+    this.setState({ players: players })
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+     <PlayerWrapper>
+        <Players players={this.state.players} />
+     </PlayerWrapper>
     );
   }
 }
