@@ -1,7 +1,7 @@
 import React from 'react';
 import { array } from 'prop-types';
 
-import PlayerCard from '../../components/PlayerCard';
+import Player from '../../components/Player';
 import {
   PlayersWrapper
 } from './styles';
@@ -15,7 +15,7 @@ const Players = ({players}) => {
 		<PlayersWrapper>
 			{
 				players.map((player) => (
-					<PlayerCard player={player} key={player.shortname} />
+					<Player player={player} key={player.shortname} />
 				))
 			}
 		</PlayersWrapper>
