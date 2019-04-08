@@ -22,8 +22,8 @@ const PlayerStats = ({player}) => {
 			<PlayerStatsWrapper>
 				<PlayerAttribute name="Age" value={player.age}/>
 				<PlayerAttribute name="Points" value={player.points}/>
-				<PlayerAttribute name="Weight (in kg)" value={playerWeight}/>
-				<PlayerAttribute name="Height (in m)" value={playerHeight}/>
+				<PlayerAttribute name="Weight (kg)" value={playerWeight}/>
+				<PlayerAttribute name="Height (m)" value={playerHeight}/>
 				<PlayerAttribute name="Wins" value={wins}/>
 				<PlayerAttribute name="Losses" value={losses}/>
 			</PlayerStatsWrapper>

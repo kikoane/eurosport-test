@@ -1,11 +1,11 @@
 import axios from 'axios';
 
-const API_URL = `https://eurosportdigital.github.io/eurosport-web-developer-recruitment/headtohead.json`;
+import { PLAYERS_JSON } from '../utils/constants';
 
 export default async () => {
 	let response = {};
 	try {
-		response = await axios.get(API_URL);
+		response = await axios.get(PLAYERS_JSON);
 	} catch (error) {
 		throw error;
 	}
