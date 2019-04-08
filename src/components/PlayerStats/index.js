@@ -1,10 +1,10 @@
 import React from 'react';
 import { object } from 'prop-types';
 
-import PlayerAttribute from '../PlayerAttribute'
-import formatHeight from '../../lib/formatHeight'
-import formatWeight from '../../lib/formatWeight'
-import computeMatchStats from '../../lib/computeMatchStats'
+import PlayerAttribute from '../PlayerAttribute';
+import formatHeight from '../../lib/formatHeight';
+import formatWeight from '../../lib/formatWeight';
+import computeMatchStats from '../../lib/computeMatchStats';
 import {
   PlayerStatsWrapper,
 } from './styles';

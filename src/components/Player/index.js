@@ -1,8 +1,8 @@
 import React from 'react';
 import { object } from 'prop-types';
 
-import PlayerHeader from '../PlayerHeader'
-import PlayerStats from '../PlayerStats'
+import PlayerHeader from '../PlayerHeader';
+import PlayerStats from '../PlayerStats';
 import {
   PlayerCardWrapper,
   ColumnWrapper,
